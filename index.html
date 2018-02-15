@@ -2,19 +2,135 @@
 <html>
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet"
+		href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+		crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 	<title>Sigrún Tinna</title>
 </head>
 <body>
-	<div id="bg"></div>
-	<h1 class="name">
-		Sigrún Tinna
-	</h1>
-	<iframe frameborder="0" 
-		src="https://itch.io/embed/224535?bg_color=0c0c0c&amp;fg_color=B86F50&amp;link_color=c36a30" 
-		width="552" 
-		height="167"
-		align="middle">
-	</iframe>
+	<button class="tablink"
+	        onclick="openTab('about-me', this, '#eeeeee')"
+			id="defaultOpen">
+		<b>About me</b>
+	</button>
+	<button class="tablink"
+	        onclick="openTab('games', this, '#eeeeee')">
+		<b>Games</b>
+	</button>
+
+	<div id="about-me" class="container-fluid tabcontent">
+		<div class="row">
+			<div class="col">
+				<p>
+					My name is <b>Sigrún Tinna</b>.
+				</p>
+				<p>
+					I study <b>Computer Science</b> at
+					Reykjavik University.
+				</p>
+				<p>
+					On this website you can find <b>games</b> that
+					I have created.
+				</p>
+				<div class="row">
+					<div class="col">
+						<a href="https://www.linkedin.com/in/sigr%C3%BAn-tinna-gissurard%C3%B3ttir-b5a1a2139/" class="icon-link"><i class="fab fa-linkedin fa-4x"></i></a>
+					</div>
+					<div class="col">
+						<a href="https://github.com/sigruntinna" class="icon-link"><i class="fab fa-github-square fa-4x"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<img src="me.jpg" class="img-me"/>
+				<p style="font-size: 12px; margin-top: 4px;">
+					<i>This is me!</i>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div id="games" class="container-fluid tabcontent">
+		<div class="row top-text">
+			<div class="col-2"></div>
+			<div class="col">
+				<p>
+					<b>These are games I made in Advanced Game Design & Development in Reykjavik University.</b>
+				</p>
+			</div>
+			<div class="col-2"></div>
+		</div>
+		<div class="row">
+			<div id="potato-wars" class="col-lg article">
+				<h3 class="article-header">Potato Wars</h3>
+
+				<iframe frameborder="0"
+					src="https://itch.io/embed/224535?border_width=3&amp;bg_color=8f4d1b&amp;fg_color=a0700a&amp;link_color=dd6700&amp;border_color=000000"
+					width="212"
+					height="171"
+					align="middle">
+				</iframe>
+
+				<p class="article-content">
+					Sigrún and Unnur are two farmers that
+					both dream of winning the potato
+					competition and controlling the market
+					price of potatoes, lowering it until the
+					other farmer goes out of business.
+					But they have to grow their crops to
+					succeed.
+				</p>
+
+				<p class="article-content">
+					They can blow potatoes out of their cannons
+					into each others garden to ruin for the
+					other. They can also blow potatoes at
+					flying objects such as birds that carry
+					potatoes in a bag and drones and balloons
+					that either carries water to give the
+					potatoes a growth boost or a shovel to
+					harvest the potato crop.
+				</p>
+			</div>
+
+			<div id="polar-bear" class="col-lg article">
+				<h3 class="article-header">Polar Bear</h3>
+
+				<iframe frameborder="0"
+					src="https://itch.io/embed/218445?border_width=3&amp;bg_color=0088b5&amp;link_color=b8edf1&amp;border_color=000000"
+					width="212"
+					height="171"
+					align="middle">
+				</iframe>
+
+				<p class="article-content">
+					This is a game about a little polar
+					bear that is swimming in an ocean
+					full of plastic bags and sharp
+					ice!
+				</p>
+				<p class="article-content">
+					The goal is to eat a lot of seals,
+					watch out for toxic plastic bags and
+					not  hit the ice because it is sharp.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<script type="text/javascript" src="javascript/main.js"></script>
 </body>
 </html>

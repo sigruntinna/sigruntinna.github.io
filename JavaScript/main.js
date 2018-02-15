@@ -1,19 +1,17 @@
+function openTab(tabName, element, color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(tabName).style.display = "block";
+    console.log(element);
+    element.style.backgroundColor = color;
 
-
-function openTab(e, tabName) {
-
-  var i, tabContent, menuTabs;
-
-  tabContent = document.getElementsByClassName("TabContent");
-  for(i = 0; i < tabContent.length; i++) {
-    tabContent[i].style.display = "none";
-  }
-
-  menuTabs = document.getElementsByClassName("MenuTabs");
-  for(i = 0; i < menuTabs.length; i++) {
-    menuTabs[i].className = menuTabs[i].className.replace(" active", "");
-  }
-
-  document.getElementById(tabName).style.display = "block";
-  e.currentTarget.className += " active";
 }
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
