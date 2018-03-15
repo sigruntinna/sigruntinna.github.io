@@ -1,170 +1,86 @@
 <!DOCTYPE html>
 <html>
-<title>Sigrún Tinna CV</title>
+<title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('/w3images/profile_girl.jpg');
+    min-height: 100%;
+}
 </style>
-<body class="w3-light-grey">
+<body>
 
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:10%; margin-right:10%;">
 
-  <!-- The Grid -->
-  <div class="w3-row-padding">
+  <!-- Header -->
+  <header class="w3-container w3-center" style="padding:100px 16px" id="home">
+    <h1 class="w3-jumbo"><b>Sigrún Tinna</b></h1>
+    <p>Computer Scientist, Programmer, Designer.</p>
+    <img src="/w3images/profile_girl.jpg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
+    <img src="/w3images/profile_girl.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+    <a href="https://www.sigruntinna.com/CV" class="w3-button w3-light-grey w3-padding-large w3-margin-top">
+        Read my Resume
+    </a>
+  </header>
 
-    <!-- Left Column -->
-    <div class="w3-third">
+  <!-- Portfolio Section -->
+  <div class="w3-padding-32 w3-content" id="portfolio">
+    <h2 class="w3-text-grey">This Is Me</h2>
+    <hr class="w3-opacity">
 
-      <div class="w3-white w3-text-grey w3-card-4 w3-margin-bottom">
-        <div class="w3-display-container">
-          <img src="me2.jpg" style="width:100%" alt="Avatar">
-          <div class="w3-display-bottomleft w3-container w3-text-white">
-            <h2>Sigrún Tinna Gissurardóttir</h2>
-          </div>
-        </div>
-        <div class="w3-container">
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Reykjavík, Iceland</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>sigruntinnagissurardottir@gmail.com</p>
-          <p><i class="fa fa-linkedin fa-fw w3-margin-right w3-large w3-text-teal"></i>linkedin.com/in/sigruntinna</p>
-		  <p><i class="fa fa-github fa-fw w3-margin-right w3-large w3-text-teal"></i>github.com/sigruntinna</p>
-          <hr>
-
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Programming Skills</b></p>
-          <p>Python</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:85%">85%</div>
-          </div>
-          <p>.NET/C#</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:85%">
-              <div class="w3-center w3-text-white">85%</div>
-            </div>
-          </div>
-		  <p>HTML/CSS</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">80%</div>
-          </div>
-          <p>Angular 4/5</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
-          </div>
-		  <p>JavaScript</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
-          </div>
-		  <p>C++/C</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:60%">60%</div>
-          </div>
-          <br>
-	    </div>
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="eg-litil.jpg" style="width:100%">
+        <img src="nyskopun.jpg" style="width:100%">
+		<img src="me2.jpg" style="width:100%">
       </div>
 
-	  <div class="w3-white w3-text-grey w3-card-4">
-		  <div class="w3-container">
-			  <p class="w3-large w3-text-theme"><b><i class="fa fa-hand-paper-o fa-fw w3-margin-right w3-text-teal"></i>Volunteer</b></p>
-			  <div class="w3-container">
-	            <h5 class="w3-opacity"><b>Slush / Helsinki, Finland</b></h5>
-	            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2017</h6>
-	            <hr>
-	          </div>
-			  <div class="w3-container">
-	            <h5 class="w3-opacity"><b>Gulleggið / Reykjavík, Iceland</b></h5>
-	            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2017</h6>
-	            <hr>
-	          </div>
-			  <div class="w3-container">
-	            <h5 class="w3-opacity"><b>/sys/tur at UTmessan / Reykjavík, Iceland</b></h5>
-	            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2016</h6>
-	          </div>
-	          <br>
-		  </div>
-        </div><br>
-
-
-    <!-- End Left Column -->
+      <div class="w3-half">
+        <img src="game.jpg" style="width:100%">
+        <img src="slush.jpg" style="width:100%">
+      </div>
+    <!-- End photo grid -->
     </div>
-
-    <!-- Right Column -->
-    <div class="w3-twothird">
-
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
-		<div class="w3-container">
-          <h5 class="w3-opacity"><b>Data Collector / Statistics Iceland</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2018 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-          <p>Hagstofa Íslands is the centre for official statistics in Iceland and collects, processes and disseminates data on the economy and society.</p>
-          <hr>
-        </div>
-		<div class="w3-container">
-          <h5 class="w3-opacity"><b>Teacher Assistant / Reykjavík University</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2017 - Dec 2017 / Aug 2016 - Dec 2016</h6>
-          <p>Teacher Assistant in Problem Solving, helping students with assignments and grading.</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Unity 3D Developer / Cadia</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2017 - Aug 2017</h6>
-          <p>I worked on this project under the hand of Associate Professor Hannes Högni Vilhjálmsson, alongside 5 other students from the University of
-			  Reykjavík. The project was based on research on how to code and develop social behavior in virtual characters.</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Web Developer / Myshopover</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2017 - Aug 2017</h6>
-          <p>I worked for the founder of MYSHOPOVER, Ellen Ragnars, alongside 2 other Computer Science students. The work entailed creating a landing
-			  page for the company which was written in HTML, CSS, and JavaScript, as well as helping with the design and development of the future product and usability testing. </p><br>
-        </div>
-      </div>
-
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Reykjavík University, Iceland</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015 - 2018</h6>
-          <p>Computer Science B.Sc. </p>
-		  <p>Overview over completed courses can be found on LinkedIn. </p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Upper Secondary Level Comprehensive School in Ármúli, Iceland</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2009 - 2011</h6>
-          <p>Matriculation examination</p>
-        </div>
-      </div>
-
-	  <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-users fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Organizations</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Innovation and entrepreneurship committee / Reykjavík University, Iceland</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2017 - </h6>
-          <p>We work closely with Icelandic Startups on various projects concerning innovation and entrepreneurship. Fall of 2017 we helped them with
-			  the startup competition Gulleggið under the management of Edda Konráðsdóttir, Project Manager at Icelandic Startups. </p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Tvíund / Reykjavík, Iceland</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2016 - Mar 2017</h6>
-          <p>Tvíund is the student organization for the Computer Science department in Reykjavík University.</p>
-        </div>
-      </div>
-
-    <!-- End Right Column -->
-    </div>
-
-  <!-- End Grid -->
+  <!-- End Portfolio Section -->
   </div>
 
-  <!-- End Page Container -->
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+    <h2>About</h2>
+    <hr class="w3-opacity">
+    <p>My name is Sigrún Tinna, a soon to gratuate in 2018 as a
+		Computer Scientist (B.Sc.). I‘m easy to get along with and I
+		enjoy working with people. I have a natural ability to
+		identify problems and brainstorm solutions.
+        I am a quick lea rner and find it easy to adapt my knowledge base.
+    </p>
+  </div>
+
+  <!-- End About Section -->
+
+<!-- END PAGE CONTENT -->
 </div>
 
-<footer class="w3-container w3-teal w3-center w3-margin-top">
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge">
+  <p class="w3-large">Lets get in touch. Find me on:</p>
+  <a href="https://www.instagram.com/sigruntinnag/" class="fa fa-instagram w3-hover-opacity" style="text-decoration: none;"></a>
+  <a href="https://github.com/sigruntinna" class="fa fa-github w3-hover-opacity" style="text-decoration: none;"></a>
+  <a href="https://www.linkedin.com/in/sigruntinna/" class="fa fa-linkedin w3-hover-opacity" style="text-decoration: none;"></a>
+<!-- End footer -->
 </footer>
+
 
 </body>
 </html>
